@@ -6,7 +6,8 @@ export class RoomList extends Component {
       this.state = {
         rooms: []
       };
-        this.roomsRef = this.props.firebase.database().ref('rooms');
+
+    this.roomsRef = this.props.firebase.database().ref('rooms');
   }
 
   componentDidMount() {
@@ -18,11 +19,20 @@ export class RoomList extends Component {
   }
 
   render() {
-    const roomList = this.state.rooms.map((room) =>
-      <li key={room.key}>{room.name}</li>
-    );
     return(
-      <ul>{roomList}</ul>
+        <section className="sidebar">
+          <h1>Bloc Chat</h1>
+              <ul className="room-list">
+                {
+                  this.state.rooms.map( (room, index) =>
+                    <li className="room" key={index}>
+                      {room.name}
+                    </li>
+                    )
+                  }
+              </ul>
+            </section>
     );
   }
 }
+export default RoomList;

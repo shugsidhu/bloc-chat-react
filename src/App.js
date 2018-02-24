@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import * as firebase from 'firebase';
-import { RoomList } from './components/RoomList.js';
+import RoomList from './components/RoomList.js';
 
 <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
   var config = {
@@ -18,10 +17,8 @@ import { RoomList } from './components/RoomList.js';
 class App extends Component {
   render() {
     return (
-      <div>
-
-       <RoomList firebase={firebase}/>
-
+      <div className= "App">
+        <RoomList firsebase= {firebase} />
       </div>
     );
   }
