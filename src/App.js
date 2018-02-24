@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import * as firebase from 'firebase';
 import { RoomList } from './components/RoomList.js';
 
-<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+
   var config = {
     apiKey: "AIzaSyAe2jTRgHYTrqM08Uq4R8CWei3GgrKpDCk",
     authDomain: "bloc-chat-react-b36ac.firebaseapp.com",
