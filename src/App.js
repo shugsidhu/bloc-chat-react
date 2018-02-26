@@ -3,7 +3,10 @@ import './App.css';
 import * as firebase from 'firebase';
 import { RoomList } from './components/RoomList.js';
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> list-rooms
   var config = {
     apiKey: "AIzaSyAe2jTRgHYTrqM08Uq4R8CWei3GgrKpDCk",
     authDomain: "bloc-chat-react-b36ac.firebaseapp.com",
@@ -17,10 +20,8 @@ import { RoomList } from './components/RoomList.js';
 class App extends Component {
   render() {
     return (
-      <div>
-
-       <RoomList firebase={firebase}/>
-
+      <div className= "App">
+        <RoomList firsebase= {firebase} />
       </div>
     );
   }

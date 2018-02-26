@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component } from 'react';
 
 export class RoomList extends Component {
   constructor(props) {
@@ -6,7 +6,8 @@ export class RoomList extends Component {
       this.state = {
         rooms: []
       };
-        this.roomsRef = this.props.firebase.database().ref('rooms');
+
+    this.roomsRef = this.props.firebase.database().ref("rooms");
   }
 
   componentDidMount() {
